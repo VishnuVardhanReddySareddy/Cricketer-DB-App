@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricketer Database</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-content" class="container">
+      <h1>Cricketer Database</h1>
+
+      <section>
+        <h2>Add Cricketer</h2>
+        <form id="cricketer-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+
+          <label for="photoUrl">Photo URL:</label>
+          <input type="url" id="photoUrl" name="photoUrl" />
+
+          <label for="birthPlace">Birth Place:</label>
+          <input type="text" id="birthPlace" name="birthPlace" required />
+
+          <label for="career">Career:</label>
+          <textarea id="career" name="career" required></textarea>
+
+          <label for="numberOfMatches">Number of Matches:</label>
+          <input
+            type="number"
+            id="numberOfMatches"
+            name="numberOfMatches"
+            required
+          />
+
+          <label for="totalRuns">Total Runs:</label>
+          <input type="number" id="totalRuns" name="totalRuns" required />
+
+          <label for="fifties">Fifties:</label>
+          <input type="number" id="fifties" name="fifties" required />
+
+          <label for="centuries">Centuries:</label>
+          <input type="number" id="centuries" name="centuries" required />
+
+          <label for="wickets">Wickets:</label>
+          <input type="number" id="wickets" name="wickets" required />
+
+          <label for="average">Average:</label>
+          <input
+            type="number"
+            step="0.01"
+            id="average"
+            name="average"
+            required
+          />
+
+          <button type="submit" class="btn">Add Cricketer</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Search Cricketer</h2>
+        <form id="search-form">
+          <label for="searchName">Name:</label>
+          <input type="text" id="searchName" name="searchName" required />
+          <button type="submit" class="btn">Search</button>
+        </form>
+
+        <div id="cricketers-list"></div>
+      </section>
+    </div>
+
+    <div id="searchResults" class="container">
+      <!-- Details will be displayed here -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
